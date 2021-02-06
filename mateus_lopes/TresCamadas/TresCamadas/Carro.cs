@@ -3,7 +3,7 @@
 namespace TresCamadas
 {
     [Tabela(Nome = "tbl_carros")]
-    public class Carro : Dado
+    public class Carro
     {
         [CampoPersistido(NomeColuna = "nome_carro")]
         public string Nome { get; set; }
@@ -12,9 +12,10 @@ namespace TresCamadas
         public int Ano { get; set; }
         public string Descricao { get; set; }
 
-        public override void Salvar()
+        public void Salvar()
         {
-            CarroDbService.Salvar(this);
+            //CarroDbService.Salvar(this);
+            DbServiceGenerics.Salvar<Carro>(this);
         }
     }
 }

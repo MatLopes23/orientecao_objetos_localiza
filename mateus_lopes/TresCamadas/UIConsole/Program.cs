@@ -7,15 +7,14 @@ namespace UIConsole
     {
         static void Main(string[] args)
         {
-            var carro = new Carro()
+            new Carro()
             {
-                Id = 1,
                 Nome = "Mateus",
                 Telefone = "123456",
                 Ano = 2021,
                 Descricao = "Teste"
-            };
-            CarroService.Salvar(carro);
+            }.Salvar();
+            //CarroService.Salvar(carro);
         }
     }
 }

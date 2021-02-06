@@ -9,7 +9,7 @@ namespace Negocio
         {
             Console.WriteLine("Estou salvando o carro");
 
-            CarroDbService.Salvar(iBase);
+            DbServiceGenerics.Salvar(iBase);
         }
     }
 }
