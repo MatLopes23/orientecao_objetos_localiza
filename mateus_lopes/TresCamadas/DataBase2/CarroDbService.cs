@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Reflection;
 
-namespace Database
+namespace DataBase
 {
     public class CarroDbService
     {
@@ -16,10 +16,8 @@ namespace Database
 
             foreach(var campo in campos)
             {
-                if(campo.Name.ToLower() != "id")
-                {
-                    colunasDb.Add(campo.Name);
-                }
+                campo.GetCustomAttribute<PkAttribute>();
+                colunasDb.Add(campo.Name);
             }
 
             sql += string.Join(",", colunasDb.ToArray());
