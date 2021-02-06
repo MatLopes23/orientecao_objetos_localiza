@@ -1,6 +1,5 @@
-﻿using Database;
+﻿using DataBase;
 using System;
-using TresCamadas;
 
 namespace Negocio
 {

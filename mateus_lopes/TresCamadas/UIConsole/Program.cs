@@ -1,5 +1,4 @@
 ﻿using Negocio;
-using System;
 using TresCamadas;
 
 namespace UIConsole

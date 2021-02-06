@@ -16,8 +16,11 @@ namespace DataBase
 
             foreach(var campo in campos)
             {
-                campo.GetCustomAttribute<PkAttribute>();
-                colunasDb.Add(campo.Name);
+                var campoPersistido = campo.GetCustomAttribute<CampoPersistidoAttribute>();
+                if(campoPersistido != null)
+                {
+                    colunasDb.Add(campo.Name);
+                }
             }
 
             sql += string.Join(",", colunasDb.ToArray());

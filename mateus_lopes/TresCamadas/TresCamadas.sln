@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Negocio", "TresCamadas\Negocio.csproj", "{83453F12-26FF-435D-8176-449FE1241CED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIConsole", "UIConsole\UIConsole.csproj", "{585AD5B8-4B7E-4BEA-98B7-DDB62E5F6C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIConsole", "UIConsole\UIConsole.csproj", "{585AD5B8-4B7E-4BEA-98B7-DDB62E5F6C72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase2\DataBase.csproj", "{11EE9C2C-6774-479B-A829-851FC074C227}"
 EndProject
